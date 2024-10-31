@@ -1,0 +1,71 @@
+
+body{
+    background-color: black;
+}
+main{
+    margin: auto;
+    text-align: center;
+    height: 39vh;
+    h1{
+        margin: 1rem 0;
+        color: white;
+        font-family: "Press Start 2P", system-ui;
+        font-weight: 400;
+        font-style: normal;
+    }
+    h2{
+       padding: 2rem;
+        color: #ffffff;
+        font-size: 2rem;
+    }   font-family: "Press Start 2P", system-ui;
+   
+    .container-input{
+        width: 40vw;
+        margin: auto;
+        
+        input{
+           
+            padding: 0.5rem;
+            margin: 1rem;
+            background-color: white;
+            border: 0;
+            border-radius: 10px;
+            font-style: italic;
+            &[type="number"]{
+                &::-webkit-inner-spin-button,
+                &::-webkit-outer-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+            }
+        }
+       
+    }
+    .container-btn{
+        
+        button{
+            background-color: #ff9f0a;
+            border: 0;
+            font-size: 2rem;
+            margin:  0 1rem;
+            border-radius: 10px;
+            width: 10%;
+            color: white;
+        }
+    }
+    @media(max-width: 500px){
+        .container-input{
+            margin: 0 5rem;
+            input{
+                padding: 1rem;
+                font-size: 1rem;
+            }
+        }
+        .container-btn{
+            margin: 2rem 0;
+        }
+    }
+    
+   
+
+}
